@@ -1,8 +1,8 @@
-<?php
+ <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
         echo "All fields are required.";
         exit;
@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
 
-    $to = "zixifiyorg@gmail.com"; // Your email address
+    $to = "zixifiyorg@gmail.com";
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
 

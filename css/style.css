@@ -78,7 +78,7 @@ ul li a:hover {
     height: auto;
     border: 4px solid rgb(180, 210, 108);
     border-radius: 50%;
-    
+    /* mix-blend-mode: color-burn; */
 }
 
 .mainText {
@@ -173,6 +173,7 @@ button:hover {
     margin-inline: 20px;
     border-radius: 5px;
     flex: 1 1 200px;
+    border: 2px solid yellowgreen;
 }
 
 .card p {
@@ -198,6 +199,7 @@ button:hover {
     margin-inline: 20px;
     padding: 11px;
     position: relative;
+    border: 2px solid yellowgreen;
 }
 
 .workCard img {
